@@ -1,0 +1,16 @@
+{
+  "name": "client",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "colyseus.js": "^0.15.28",
+    "phaser": "3.90"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^6.4.5"
+  }
+}

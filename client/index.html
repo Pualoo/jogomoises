@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo do Moisés</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="game"></div>
+
+    <div id="hud" class="hidden">
+      <div class="score"><span id="p0"></span><span id="score">0 × 0</span><span id="p1"></span></div>
+      <div id="round"></div>
+    </div>
+
+    <div id="hand" class="hidden"></div>
+    <div id="hint" class="hidden">Escolha uma carta (1 · 2 · 3) e clique no mapa</div>
+    <div id="banner" class="hidden"></div>
+
+    <div id="lobby">
+      <h1>JOGO DO<br />MOISÉS</h1>
+      <p class="sub">Mexa no mapa. Dê o golpe final no alvo.</p>
+      <input id="name" maxlength="14" placeholder="Seu nome" />
+      <div id="lobby-main">
+        <button id="create">Criar sala</button>
+        <div class="join"><input id="code" placeholder="Código" /><button id="join">Entrar</button></div>
+      </div>
+      <div id="lobby-wait" class="hidden">
+        <p>Sala criada! Mande pro seu amigo:</p>
+        <div class="code" id="room-code"></div>
+        <button id="copy">Copiar link</button>
+        <p class="sub blink">Esperando o outro jogador…</p>
+      </div>
+      <p id="error" class="error"></p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

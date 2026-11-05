@@ -1,0 +1,4 @@
+# Troque pelo seu domínio apontando pro IP da VPS (HTTPS automático).
+seudominio.com {
+  reverse_proxy game:2567
+}
